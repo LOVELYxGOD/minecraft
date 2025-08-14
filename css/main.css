@@ -21,6 +21,7 @@ body {
     display: flex;
     justify-content: flex-end;
     gap: 8px;
+    padding: 6px 0;
     
 
 }
@@ -32,6 +33,7 @@ body {
     background-image: url(../img/stone_bg_2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 6px 0 ;
 }
 
 .header__navigation {
@@ -61,6 +63,7 @@ body {
 
 }
 .link-other-page {
+    text-decoration: none;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -76,6 +79,31 @@ body {
 
 }
 .link-other-page__text {
+    text-decoration: none;
     color: aliceblue;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    
+}
+
+/* адаптив */
+
+@media(max-width: 1024px) {
+    .link-other-page__text {
+        font-weight: 500;
+        font-size: 17px;
+    }
+    .link-other-page {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .link-other-page__wrapper-picture {
+        width:  70px;
+        height: 70px;
+    }
+    .header__navigation {
+        flex-direction: column;
+    }
+
 }
