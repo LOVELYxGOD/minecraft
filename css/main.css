@@ -1,6 +1,10 @@
 /* base */
 /* header */
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .header {
     background-color:#10421d;
 }
@@ -73,5 +77,5 @@
 }
 .link-other-page__text {
     color: aliceblue;
-
+    font-family: 'Open Sans', sans-serif;
 }
