@@ -2,12 +2,18 @@
 
 /* header */
 
+:root {
+    --text-color: #ffffff;
+    --page-background: #000000;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color:var(--page-background);
 }
 
 .header {
-    background-color:#10421d;
+    background-color:var(--page-background);
 }
 .container {
     max-width: 1440px;
@@ -81,7 +87,7 @@ body {
 }
 .link-other-page__text {
     text-decoration: none;
-    color: aliceblue;
+    color: var(--text-color);
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 20px;
@@ -118,19 +124,20 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
+    color: var(--text-color);
     text-shadow: 3px 3px 3px #000;
     width: 100%;
     padding: 0 40px;
+    font-family: 'Pixelify Sans', sans-serif;
 
 }
 .main-title {
     font-size: 52px;
+    font-family: 'Pixelify Sans', sans-serif;
 }
 .hero__description {
     font-size: 24px;
-    
-    
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* адаптив */
