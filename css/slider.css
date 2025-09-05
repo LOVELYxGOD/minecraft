@@ -1,0 +1,43 @@
+.slider {
+    max-width: 800px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slick-next {
+    right: -75px;
+}
+
+.slick-prev {
+    left: -75px;
+    
+}
+
+.slick-arrow {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-slide {
+    background-color: bisque;
+    height: 100px;
+}
+
+.slick-dots {
+    display: flex;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    margin: 0;
+    transform: translateX(-50%);
+}
