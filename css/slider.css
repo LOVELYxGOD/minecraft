@@ -39,5 +39,25 @@
     bottom: -40px;
     left: 50%;
     margin: 0;
-    transform: translateX(-50%);
+    transform: translateX(-50%);   
+    gap: 5px;
+}
+
+.slick-dots button{
+    border-radius: 50%;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #fff;
+    transition: all 0.3s;
+    outline: none;
+
+}
+
+.slick-active button {
+    border-color: #51ff00;
+    filter: drop-shadow(0px 0px 5px #7dcd15) ;
+    transform: scale(1.3);
 }
