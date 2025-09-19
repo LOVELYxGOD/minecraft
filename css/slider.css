@@ -30,7 +30,39 @@
 
 .slick-slide {
     background-color: bisque;
-    height: 100px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.slick-slide--first {
+    background-image: url(../img/minecraft-pc-sunny-forest-iom8ehiryqnh1sd4.jpg);
+}
+
+.slick-slide--second {
+    background-image: url(../img/buildings.png);
+}
+
+.slick-slide--third {
+    background-image: url(../img/minecraft_monsters.jpg);
+}
+
+.slick-slide--fourth {
+    background-image: url(../img/multiplayer.avif);
+}
+
+.slick-slide--fifth {
+    background-image: url(../img/steve_craft.webp);
+}
+
+.slick-slide__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
 }
 
 .slick-dots {
