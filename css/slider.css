@@ -3,21 +3,38 @@
     background-color: #ffffff;
     margin: 0 auto;
     position: relative;
+    
 }
 
 .slick-next {
     right: -75px;
+    
 }
 
 .slick-prev {
     left: -75px;
     
+
 }
 
 .slick-arrow {
     position: absolute;
     bottom: 50%;
     transform: translateY(50%);
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: None;
+    cursor: pointer;
+}
+
+.slick-arrow__icon {
+    fill: #fff;
+}
+
+.slick-arrow__icon:hover{
+    fill: #51ff00;
 }
 
 .slick-list {
@@ -30,42 +47,6 @@
 
 .slick-slide {
     background-color: bisque;
-    height: 300px;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    padding: 40px;
-}
-
-.slick-slide--first {
-    background-image: url(../img/minecraft-pc-sunny-forest-iom8ehiryqnh1sd4.jpg);
-}
-
-.slick-slide--second {
-    background-image: url(../img/buildings.png);
-}
-
-.slick-slide--third {
-    background-image: url(../img/minecraft_monsters.jpg);
-}
-
-.slick-slide--fourth {
-    background-image: url(../img/multiplayer.avif);
-}
-
-.slick-slide--fifth {
-    background-image: url(../img/steve_craft.webp);
-}
-
-.slick-slide__text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--text-color);
-    text-shadow: 3px 3px 3px #000;
-    width: 100%;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .slick-dots {
