@@ -34,6 +34,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    padding: 40px;
 }
 
 .slick-slide--first {
@@ -61,8 +62,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: var(--text-color);
+    text-shadow: 3px 3px 3px #000;
     width: 100%;
-    text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .slick-dots {
