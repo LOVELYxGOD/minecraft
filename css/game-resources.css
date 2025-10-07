@@ -29,15 +29,47 @@
 }
 
 .article-link {
+
 }
+
 .card-of-mode {
     border: 3px solid #a5a5a5;
     border-radius: 10px;
     height: 100%;
+    padding: 20px;
 }
 .card-of-mode__wrapper-picture {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
 }
+
+.card-of-mode__wrapper-picture:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.041);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
 .card-of-mode__image {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
 }
 .card-of-mode__title {
+    /* 1. разположить через position надписи под врапером/оболочкой и выровнить по горизонтали(пример: пагинация) */
+    /* 2. во время ховера по артиклу линку надпись из под оболочки должна плавна подниматься */
 }
+
+.article-link:hover .card-of-mode__wrapper-picture:before {
+    backdrop-filter: blur(0);
+}
+
