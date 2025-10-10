@@ -57,19 +57,54 @@
     background-color: rgba(255, 255, 255, 0.041);
     backdrop-filter: blur(10px);
     transition: 0.3s;
+    z-index: 5;
 }
 
 .card-of-mode__image {
     width: 100%;
     object-fit: cover;
     height: 100%;
+    transition: .3s;
+    transform: rotate(20deg) scale(1.6);
+
 }
 .card-of-mode__title {
-    /* 1. разположить через position надписи под врапером/оболочкой и выровнить по горизонтали(пример: пагинация) */
-    /* 2. во время ховера по артиклу линку надпись из под оболочки должна плавна подниматься */
+    position: absolute;
+    bottom: -40px;
+    right: 50%;
+    transform: translateX(50%);
+    transition: 0.5s;
+    opacity: 0;
+    background-color: #ffffff;
+    padding: 15px 25px;
+    border-radius: 10px;
+    color:rgb(80, 80, 80);
+    transition: .3s;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.card-of-mode__title:hover {
+    background-color: #8a8a8a;
+    color:rgb(0, 0, 0);
 }
 
 .article-link:hover .card-of-mode__wrapper-picture:before {
     backdrop-filter: blur(0);
 }
 
+.article-link:hover .card-of-mode__title{
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    opacity: 1;
+}
+
+.article-link:hover .card-of-mode__image {
+        transform: rotate(0) scale(1);
+}
+
+
+a, a:visited {
+    color: inherit;
+}
