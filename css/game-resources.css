@@ -133,4 +133,8 @@ a, a:visited {
     .list-of-cards__item {
         grid-row: auto; 
     }
+    .card-of-mode__title {
+    font-weight: 600;
+    font-size: 12px;
+    }
 }
