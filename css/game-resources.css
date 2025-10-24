@@ -77,6 +77,21 @@ a, a:visited {
     color: inherit;
 }
 
+.screamer-img {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    object-fit: cover;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
 @media (hover:hover) {
     .card-of-mode__name {
         position: absolute;
