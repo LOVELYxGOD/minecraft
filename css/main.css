@@ -92,6 +92,10 @@ body {
 
 /* MAIN - HERO тут */
 
+.main--about {
+    padding-top: 120px;
+}
+
 .hero {
     padding: 30px 0;
 }
@@ -207,6 +211,9 @@ body {
     }
     .hero__description {
         font-size: 18px;
+    }
+    .main--about {
+        padding-top: 60px;
     }
 }
 
