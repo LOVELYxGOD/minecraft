@@ -1,6 +1,3 @@
-/* base */
-
-/* header */
 
 :root {
     --text-color: #ffffff;
@@ -90,8 +87,6 @@ body {
     font-size: 20px;
 }
 
-/* MAIN - HERO тут */
-
 .main--about {
     padding-top: 120px;
 }
@@ -131,7 +126,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* footer */
 
 .footer {
     margin-top: auto;
@@ -181,8 +175,6 @@ body {
         fill: #fff;
     }
 }
-
-/* адаптив */
 
 @media(max-width: 1024px) {
     .link-other-page__text {

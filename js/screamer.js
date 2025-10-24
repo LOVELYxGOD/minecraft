@@ -1,15 +1,3 @@
-// alert('привет скример')
-// console.log('привет скример');
-// const name = 'скример';
-// console.log(name);
-// // name = 'не скример'
-
-// let name = 'скример'
-// name = 'не скример'
-// console.log(name);
-
-// let name ;
-// console.log(name);
 
 const screamerCard = document.querySelector('#screamerCard')
 
@@ -17,7 +5,6 @@ let timeOutId;
 
 const screamerImg = document.createElement('img')
 screamerImg.src = '../img/screamer.webp'
-document.body.classList.add('no-scroll')
 screamerImg.className = 'screamer-img'
 
 screamerCard.addEventListener('click', function() {
@@ -25,10 +12,11 @@ screamerCard.addEventListener('click', function() {
     document.body.append(screamerImg)
     audio.play();
     timeOutId = setTimeout(deleteScreamer, 2000)
+    document.body.classList.add('no-scroll')
 })
 
 function deleteScreamer() {
     screamerImg.remove()
     clearTimeout(timeOutId)
+    document.body.classList.remove('no-scroll')
 }
-
