@@ -1,7 +1,22 @@
 
 const screamerCard = document.querySelector('#screamerCard')
+
+let timeOutId;
+
+const screamerImg = document.createElement('img')
+screamerImg.src = '../img/screamer.webp'
+screamerImg.className = 'screamer-img'
+
 screamerCard.addEventListener('click', function() {
-    console.log(screamerCard);
-    const audio = new Audio('../img/among.mp3');
+    const audio = new Audio('../sound/among.mp3');
+    document.body.append(screamerImg)
     audio.play();
+    timeOutId = setTimeout(deleteScreamer, 2000)
+    document.body.classList.add('no-scroll')
 })
+
+function deleteScreamer() {
+    screamerImg.remove()
+    clearTimeout(timeOutId)
+    document.body.classList.remove('no-scroll')
+}
