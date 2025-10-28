@@ -73,6 +73,21 @@
     text-shadow: 0 0 6px #000;
 }
 
+.screamer-img {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    object-fit: cover;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
 a, a:visited {
     color: inherit;
 }
