@@ -20,3 +20,4 @@ function deleteScreamer() {
     clearTimeout(timeOutId)
     document.body.classList.remove('no-scroll')
 }
+
